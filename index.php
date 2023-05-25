@@ -96,7 +96,7 @@
 			}
 
 			// Armazena o resultado no histórico de cálculos
-			$historico = date('d/m/Y H:i:s')." - ".implode(" ".$operacao." ", $valores)." = ".$resultado."\n";
+			$historico = date('Y-m-d H:i:s')." - ".implode(" ".$operacao." ", $valores)." = ".$resultado."\n";
 			file_put_contents('historico.txt', $historico, FILE_APPEND);
 
 			echo "Resultado: ".$resultado;
